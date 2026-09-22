@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Team Builder</h1>
+        <p>Web-Based Student Team Formation System</p>
+
+        <div class="form-section">
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="text" id="roll" placeholder="Roll Number">
+            <input type="text" id="skills" placeholder="Skills">
+            <input type="text" id="interests" placeholder="Interests">
+
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <h2>Students</h2>
+        <div id="studentList"></div>
+
+        <div class="team-section">
+            <input type="number" id="teamSize" placeholder="Enter Team Size" min="1">
+            <button onclick="generateTeams()">Generate Teams</button>
+        </div>
+
+        <h2>Generated Teams</h2>
+        <div id="teams"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
